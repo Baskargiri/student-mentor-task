@@ -5,7 +5,7 @@ const app = express();
 import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 dotenv.config();
 
-const MONGO_URL = process.env.PORT;
+const MONGO_URL = process.env.MONGO_URL;
 const client = new MongoClient(MONGO_URL); // dial
 // Top level await
 await client.connect(); // call
